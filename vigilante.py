@@ -1,10 +1,12 @@
 from flask import Flask
 from User import user
 from Report import report
+from Reply import  reply
 
 app = Flask(__name__)
 app.register_blueprint(user.user)
 app.register_blueprint(report.report)
+app.register_blueprint(reply.reply)
 
 
 @app.route('/')
