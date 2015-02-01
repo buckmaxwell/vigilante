@@ -18,7 +18,7 @@ def hello_world():
     return 'Report'
 
 
-@report.route('/create', methods=['POST'])
+@report.route('/create', methods=['GET', 'POST'])
 def create_report():
     _report = Report('Report1', 'severity', 'location', 'description')
     report_list = [_report.kind, _report.title, _report.description, _report.severity, _report.location]
