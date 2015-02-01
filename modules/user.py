@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-profile = Blueprint('users', __name__)
+profile = Blueprint('users', __name__ , )
 
 
 @profile.route('/')

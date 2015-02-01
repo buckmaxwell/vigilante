@@ -2,7 +2,7 @@ from flask import Flask
 from modules import user
 
 app = Flask(__name__)
-app.register_blueprint(user, url_prefix='/users')
+app.register_blueprint(user)
 
 @app.route('/')
 def hello_world():
