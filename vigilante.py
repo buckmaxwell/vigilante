@@ -10,6 +10,7 @@ app.register_blueprint(reply.reply)
 
 
 @app.route('/')
+@app.route('/index')
 def hello_world():
     return 'Hello World!'
 
