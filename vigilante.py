@@ -1,7 +1,7 @@
 from flask import Flask
 from User import user
 from Report import report
-from Reply import  reply
+from Reply import reply
 
 app = Flask(__name__)
 app.register_blueprint(user.user)
