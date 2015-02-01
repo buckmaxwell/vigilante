@@ -2,7 +2,7 @@ from flask import Flask
 from User import user
 
 app = Flask(__name__)
-app.register_blueprint(user)
+app.register_blueprint(user.user)
 
 
 @app.route('/')
