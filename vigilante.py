@@ -1,5 +1,6 @@
 from flask import Flask
-from modules import user
+import user
+
 
 app = Flask(__name__)
 app.register_blueprint(user)
