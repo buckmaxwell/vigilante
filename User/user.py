@@ -1,8 +1,8 @@
 from flask import Blueprint
 
-profile = Blueprint('users', __name__)
+user = Blueprint('user', __name__)
 
 
-@profile.route('/')
+@user.route('/user')
 def hello_world():
     return 'Hello World 2!'

@@ -1,5 +1,5 @@
 from flask import Flask
-import user
+from User import user
 
 app = Flask(__name__)
 app.register_blueprint(user)
