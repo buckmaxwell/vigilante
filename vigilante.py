@@ -1,8 +1,10 @@
 from flask import Flask
 from User import user
+from Report import report
 
 app = Flask(__name__)
 app.register_blueprint(user.user)
+app.register_blueprint(report.report)
 
 
 @app.route('/')

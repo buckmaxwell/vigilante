@@ -5,4 +5,4 @@ user = Blueprint('user', __name__)
 
 @user.route('/user')
 def hello_world():
-    return 'Hello World 2!'
+    return 'User'
